@@ -1,0 +1,43 @@
+.container {
+   flex-direction: row;
+   padding: 20px 0;
+}
+
+.two-columns>.column {
+   width: calc(50vw - 20px);
+   margin-right: 20px;
+}
+
+.two-columns>.column:last-child {
+   margin-right: 0;
+}
+
+.three-columns>.column {
+   margin-right: 20px;
+   width: calc(33vw);
+}
+
+.three-columns>.column:first-child {
+   margin-left: 20px;
+}
+
+.burger {
+   display: none;
+}
+
+.nav__menu {
+   display: block;
+}
+
+.nav__logo {
+   margin: 0;
+}
+
+.section, .nav, .footer {
+   margin: 10px 0;
+   padding: 10px 0;
+}
+
+.footer>.container {
+   justify-content: center;
+}

@@ -1,0 +1,70 @@
+.orange-bg {
+   background-color: var(--orange);
+   height: 300px;
+
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0px auto;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.section, .nav, .footer {
+   border: 5px solid green;
+
+}
+
+.container {
+   border: 5px solid blue;
+}
+
+.nav>.container {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.nav__logo, .nav__menu {
+   height: 30px;
+}
+
+.nav__logo {
+   width: 150px;
+   margin: 0 auto;
+}
+
+.nav__menu {
+   width: 400px;
+}
+
+.burger {
+   height: 30px;
+   width: 30px;
+   background-color: gray;
+
+}
+
+.nav__menu {
+   display: none;
+}
+
+.three-columns>.column,
+.two-columns>.column {
+   margin-bottom: 20px;
+}
+
+.three-columns>.column:last-child,
+.two-columns>.column:last-child {
+   margin-bottom: 0;
+}
+
+.footer>.container {
+   align-items: center;
+}
+
+.footer__logo {
+   height: 30px;
+   width: 120px;
+}

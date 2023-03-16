@@ -1,0 +1,126 @@
+/* burger button START*/
+.hamburger {
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 0;
+   position: relative;
+   border-top: 5px solid black;
+   transition: 0.1s transform linear;
+   display: block;
+}
+
+.hamburger::before,
+.hamburger::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   border-top: 5px solid black;
+   transform: translateY(10px);
+   transition: 0.3s transform linear;
+}
+
+.hamburger::after {
+   transform: translateY(25px);
+   transition: 0.09s transform linear;
+}
+
+
+.navigation {
+   position: relative;
+}
+
+#switcher-label {
+
+   display: inline-block;
+}
+
+#switcher-label,
+#menu-switcher {
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 40px;
+   height: 40px;
+}
+
+#menu-switcher {
+   display: none;
+}
+
+#menu-switcher+.menu {
+   display: none;
+}
+
+#menu-switcher:checked+.menu {
+   display: flex;
+
+}
+
+#menu-switcher+.menu {
+   flex-direction: column;
+}
+
+/* burger button END*/
+/* main menu START */
+
+.menu__item {
+   border-top: 5px solid transparent;
+   transition: 0.3s linear;
+
+}
+
+.menu__item:hover {
+   border-top: 5px solid var(--menu-link-color-h);
+}
+
+.menu__item:hover .menu__link {
+   transition: 0.3s linear;
+   color: var(--menu-link-color-h);
+}
+
+.sub-menu__link,
+.menu__link {
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 16px 16px;
+   display: block;
+   color: var(--menu-link-color);
+   text-align: center;
+}
+
+.menu__link:hover {
+   transition: 0.3s linear;
+   color: var(--menu-link-color-h);
+}
+
+.menu__link {
+   text-transform: uppercase;
+}
+
+.menu__item--has-children>.sub-menu {
+   display: none;
+   transition: 0.45s linear;
+}
+
+.menu__item--has-children:hover>.sub-menu {
+   display: block;
+}
+
+.sub-menu__item {
+   background-color: var(--sub-item-bg-color);
+}
+
+.sub-menu__item:hover {
+   background-color: var(--sub-item-bgh-color);
+}
+
+.sub-menu__link {
+   text-transform: capitalize;
+   padding-left: 32px;
+   color: var(--sub-link-color);
+}
+
+/* main menu END */

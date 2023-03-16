@@ -1,0 +1,28 @@
+@media (min-width:768px) {
+
+   #menu-switcher+.menu {
+      display: flex;
+      flex-direction: row;
+   }
+
+   #switcher-label,
+   #menu-switcher {
+      display: none;
+   }
+
+   .menu__item--has-children {
+      position: relative;
+   }
+
+   .menu__item--has-children>.sub-menu {
+      position: absolute;
+   }
+
+   .menu__item--has-children>.sub-menu .sub-menu__item .sub-menu__link {
+      padding-left: 16px;
+   }
+
+   .menu__item--has-children>.sub-menu .sub-menu__item {
+      width: 240px;
+   }
+}
